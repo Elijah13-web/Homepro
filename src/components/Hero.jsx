@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import rectA from "../assets/Images/Rectangle 1.png";
+import rectA from "../assets/images/Rectangle 1.png";
 import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
 import { CiSquarePlus } from "react-icons/ci";
 import { CiSquareMinus } from "react-icons/ci";
