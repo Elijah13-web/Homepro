@@ -1,8 +1,13 @@
 import React from 'react'
+import Footer from '../components/Footer';
+import Jumbotron from '../components/Jumbotrun'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div>
+      <Jumbotron title="Have any Questions?" description="We are available, contact us"/>
+      <Footer/>
+    </div>
   )
 }
 

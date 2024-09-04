@@ -1,18 +1,18 @@
 import React from 'react'
-import ngnIcon from '../../assets/icons/CurrencyNgn.png'
-import heart from '../../assets/icons/Vector.png'
-import bedIcon from '../../assets/icons/Bed.png'
+import ngnIcon from "../../assets/icons/CurrencyNgn.png"
+import heart from "../../assets/icons/Heart.png"
+import bedIcon from '../../assets/icons/Bed.png';
 import bathIcon from '../../assets/icons/Bathtub.png'
 import tdesign from '../../assets/icons/tdesign_measurement-2.png'
 
 const PropertyCard = ({ _id, title, image, price, bed, bath, size }) => {
     return (
         <>
-            <div className="bg-slate-100 rounded-xl max-w-[400px] h-[396px]" key={_id}>
+            <div className="bg-slate-50 rounded-xl max-w-[400px] h-[396px] hover:border" key={_id}>
                 <div className='rounded-lg p-6 max-w-[400px]'>
                     <img src={image} alt='37(1)' className='w-[325px] h-[245px] r-[15px]' />
                     <div className=' flex text-[#1F1F1F]  text-2xl font-Avenir LT Std w-[154px] justify-between my-1 '>
-                        <img src={ngnIcon} alt='ngn' className=' w-[29px]' />
+                        <img src={ngnIcon} alt='ngnIcon' className=' w-[29px]' />
                         <span>{price.toLocaleString("en-us")}</span>
                         <img src={heart} alt='vector' className=' flex h-[20px] w-[21px] mx-36 my-1' />
                     </div>

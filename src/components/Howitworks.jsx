@@ -1,13 +1,12 @@
 import React from 'react'
 import Wrapper from './Wrapper'
-import icon1 from '../assets/icons/Frame 71.png'
 import { howitworksDb } from './db'
-
+ 
 const Howitworks = () => {
   return (
     <Wrapper>
         <div>
-            <h1 className='text-4xl font-bold py-8'>How It Works</h1>
+            <h1 className='text-3xl md:text-5xl font-bold py-10 text-center  lg:text-start'>How It Works</h1>
         </div>
         <div className="flex justify-around lg:justify-between flex-wrap lg:flex-nowrap gap-4">
         {howitworksDb && howitworksDb.map((item, index)=>{

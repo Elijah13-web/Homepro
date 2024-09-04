@@ -15,7 +15,7 @@ const Menu = () => {
         </nav>
         
         <div className="flex flex-col lg:flex-row justify-between   items-center min-w-[70%] text-xl">
-          <ul className="min-w-[60%] flex flex-col lg:flex-row justify-between items-center" >
+          <ul className="min-w-[60%] flex flex-col lg:flex-row justify-between md:items-center " >
           <li className="hover:text-custom-green hover:border-b-2 border-custom-green">
             <NavLink to="/">Home</NavLink>
           </li>

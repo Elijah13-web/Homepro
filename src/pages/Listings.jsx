@@ -1,9 +1,13 @@
 import React from 'react'
+import Footer from '../components/Footer'
+import Jumbotron from '../components/Jumbotrun'
+import Properites from '../components/Properites'
 
 const Listings = () => {
   return (
     <div>
-      <h1 className='bg-yellow-300 text-white text-6xl text-center py-32'>Find the Best Properties</h1>
+      <Jumbotron title="Find the Best Properties" description="Discover a wide range of exclusive properties tailored to your unique preferences."/>
+      <Properites/>
     </div>
   )
 }
