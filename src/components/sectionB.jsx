@@ -4,9 +4,9 @@ import { SectionBDb } from './db'
 
 const SectionB = () => {
   return (
-    <div>
+    <div className='w-[100%]'>
         <form>
-        <div className="space-y-6 py-10 px-6 bg-slate-200 rounded-3xl p-6">
+        <div className="space-y-6 py-10 px-6 bg-slate-200 rounded-3xl  p-6">
                     <div className='rounded-md '>
                         {/* <label htmlFor="location" className="block text-sm font-medium text-gray-700">Location:</label> */}
                         <select id="location" className="mt-1 block w-full p-3 text-lg border border-gray-300 rounded-xl bg-slate-100 shadow-sm">
@@ -54,8 +54,8 @@ const SectionB = () => {
         </form>
 
 
-<div>
-    <h1 className='text-3xl font-bold'>Featured Properites</h1>
+<div className='py-12'>
+    <h1 className='text-3xl font-bold p-5'>Featured Properites</h1>
     <div>
     {SectionBDb && SectionBDb.map((item, index)=>{
         return (

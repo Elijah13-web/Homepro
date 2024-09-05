@@ -3,10 +3,11 @@ import Wrapper from '../components/Wrapper'
 import Section from '../components/Section'
 import SectionB from '../components/sectionB'
 
+
 const Properites = () => {
   return (
     <Wrapper>
-      <div className='grid lg:grid-cols-3 gap-8'>
+      <div className='grid lg:grid-cols-3 gap-10 py-14'>
         <div className="border border-slate-200 rounded-2xl p-4">
         <SectionB />
         </div>

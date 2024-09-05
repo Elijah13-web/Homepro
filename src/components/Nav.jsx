@@ -5,9 +5,9 @@ import home from "../assets/icons/Vector (5).png";
 
 const Menu = () => {
   return (
-    <div className='w-full bg-[#F8F3DD]'>
+    <div className='py-8 bg-[#F8F3DD]'>
       <nav className=' flex max-w-[90%] mx-auto'>
-        <nav className="flex  w-full py-10 ">
+        <nav className="flex  lg:w-full md:w-[100%] py-10 ">
         <NavLink to="/" className='flex'>
         <img src={home} alt="home" />
       <img src={logo} alt='logo' />

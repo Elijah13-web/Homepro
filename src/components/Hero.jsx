@@ -35,7 +35,7 @@ const Hero = () => {
   };
 
   return (
-    <div className='min-h-screen bg-[#F8F3DD] flex flex-col'>
+    <div className='min-h-screen bg-[#F8F3DD] flex flex-col '>
       <div className='flex flex-col lg:flex-row flex-1'>
         {/* Text Content */}
         <div className='flex items-center justify-between w-full sm:w-full px-36 mx-40'>

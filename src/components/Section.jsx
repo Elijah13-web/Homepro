@@ -5,7 +5,7 @@ import PropertyCard from './cards/PropertyCard'
 const Section = () => {
   return (
     <div className=''>
-        <div className='w-full grid grid-cols-2 gap-8 min-h-[100vh]'>
+        <div className='w-full grid sm:grid-cols-2 gap-8 min-h-[100vh]'>
       { SectionDb && SectionDb.length > 0 && SectionDb.map((property)=>{
         return(
           <div className=""key={property._id}>
