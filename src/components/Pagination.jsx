@@ -5,7 +5,7 @@ import frame3 from "../assets/icons/Frame 173.png"
 import frame4 from "../assets/icons/Frame 174 (1).png"
 import frame5 from "../assets/icons/Frame 176.png"
 import frame6 from "../assets/icons/Frame 177.png"
-import Wrapper from './Wrapper'
+import Wrapper from './reasurable/Wrapper'
 
 export const Pagination = () => {
   return (

@@ -3,6 +3,7 @@ import rectA from "../assets/images/Rectangle 1.png";
 import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
 import { CiSquarePlus } from "react-icons/ci";
 import { CiSquareMinus } from "react-icons/ci";
+import Wrapper from './reasurable/Wrapper';
 
 // VerticalDivider component
 const VerticalDivider = ({ height = '100px', width = '1px', color = 'white' }) => {
@@ -35,36 +36,41 @@ const Hero = () => {
   };
 
   return (
-    <div className='min-h-screen bg-[#F8F3DD] flex flex-col '>
-      <div className='flex flex-col lg:flex-row flex-1'>
+   <div className=' bg-[#F8F3DD]  '>
+    <Wrapper>
+     <div className=' flex flex-col'>
+      <div className='flex flex-col-reverse lg:flex-row flex-1  w-full'>
         {/* Text Content */}
-        <div className='flex items-center justify-between w-full sm:w-full px-36 mx-40'>
-          <div className='transform scale-125'>
-            <h1 className='font-semibold text-4xl'>
+        <div className='flex  justify-center w-[100%] lg:mt-28'>
+          <div className='text-center lg:text-start'>
+            <h1 className='font-semibold text-5xl pt-3'>
               Find Your Dream <br /> Home Today!
             </h1>
-            <p className='text-lg  py-5 font-semibold'>
+            <p className='text-2xl  py-5 font-semibold hidden md:block'>
               Your journey to a new home starts here. <br/>
               Let's find the perfect place for you.
             </p>
-            <button className='bg-[#9FA007] text-white font-semibold py-3 px-6 rounded-full'>
+            <p className='text-2xl  py-5 font-semibold md:hidden '>
+              Your journey to a new home starts here.
+              Let's find the perfect place for you.
+            </p>
+            <button className='bg-[#a0a007c4] text-white font-semibold py-5 px-6 rounded-full hover:bg-[#a0a007]'>
               Browse Properties
             </button>
           </div>
         </div>
         
         {/* Image */}
-        <div className='hidden lg:block w-full lg:w-1/2 mt-20 mr-24 transform scale-125'>
+        <div className=' flex flex-col justify-center items-center lg:block  lg:w-4/5 '>
           <img 
             src={rectA}
             alt='img' 
-            className='max-w-[480px]' 
-          />
+            className=''/>
         </div>
       </div>
 
       {/* Bottom Black Section */}
-      <div className='bg-black text-white flex flex-wrap items-center justify-between p-3 rounded-full ml-8 mr-8  mb-5 relative'>
+      <div className='bg-black text-white flex flex-wrap items-center justify-between p-4 rounded-lg lg:rounded-full mt-16 mb-8 relative flex-col lg:flex-row'>
         {/* Location */}
         <div className='flex-1 mx-2 relative ml-10'>
           <h1 className='text-xl font-semibold mb-1 '>
@@ -237,11 +243,13 @@ const Hero = () => {
           )}
         </div>
 
-        <button className='bg-[#9FA007] text-white font-semibold py-3 px-6 rounded-full mr-10'>
+        <button className='bg-[#a0a007] text-white font-semibold py-4 px-6 mt-2 rounded-full hover:bg-[#a0a007c4]'>
           Search Properties
         </button>
       </div>
     </div>
+   </Wrapper>
+   </div>
   );
 };
 

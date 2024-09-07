@@ -1,10 +1,12 @@
 import React from 'react'
-import Wrapper from './Wrapper'
+import Wrapper from './reasurable/Wrapper'
+import { Swiper, SwiperSlide } from 'swiper/react'
 import { TestimonialsDb } from './db'
 
 const Testimonials = () => {
   return (
     <Wrapper>
+      <Swiper>
       <div className='py-5'>
       <h1 className='text-3xl md:text-5xl font-bold py-5 text-center lg:text-start'>Customer Testimonials</h1>
     </div>
@@ -23,6 +25,7 @@ const Testimonials = () => {
             )
         })}
         </div>
+      </Swiper>
     </Wrapper>
   )
 }

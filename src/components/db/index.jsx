@@ -46,6 +46,8 @@ import img156 from "../../assets/images/Frame 156.png"
 import img157 from "../../assets/images/Frame 157.png"
 import img158 from "../../assets/images/Frame 158.png"
 
+import icon85 from "../../assets/icons/Group.png"
+
 
 
 
@@ -468,5 +470,4 @@ export const SectionBDb=[
             image: img158
     
         },
-    
 ]

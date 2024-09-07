@@ -1,6 +1,6 @@
 import React from 'react'
 import { listingsDb } from './db'
-import Wrapper from '../components/Wrapper'
+import Wrapper from './reasurable/Wrapper'
 import PropertyCard from '../components/cards/PropertyCard'
 
 const Listings = () => {

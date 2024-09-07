@@ -1,5 +1,5 @@
 import React from 'react'
-import Wrapper from '../Wrapper'
+import Wrapper from '../reasurable/Wrapper'
 import { blogCardDb } from '../db'
 
 const blogCard = () => {

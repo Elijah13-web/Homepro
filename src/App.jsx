@@ -6,11 +6,15 @@ import AboutUs from './pages/About Us';
 import Listings from './pages/Listings';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
+import Login from './pages/auth/Login';
+import Register from './pages/auth/Resgister';
+import HelmetWrapper from './components/reasurable/HelmetAsync';
 
 
 const App = () => {
   return (
-    <BrowserRouter>
+   <HelmetWrapper>
+     <BrowserRouter>
       <Menu/>
       <Routes>
       <Route path='/'element={<Home/>}/>
@@ -18,8 +22,11 @@ const App = () => {
       <Route path='/listings' element={<Listings/>}/>
       <Route path='/blog' element={<Blog/>}/>
       <Route path='/contact'element={<Contact/>}/>
+      <Route path='/login' element={<Login/>} />
+      <Route path="/register" element={<Register/>} />
       </Routes>
     </BrowserRouter>
+   </HelmetWrapper>
   )
 }
 

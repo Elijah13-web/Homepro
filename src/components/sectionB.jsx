@@ -1,15 +1,16 @@
 import React from 'react'
 import nairaIcon from "../assets/icons/CurrencyNgn (1).png"
 import { SectionBDb } from './db'
+import Wrapper from './reasurable/Wrapper'
 
 const SectionB = () => {
   return (
-    <div className='w-[100%]'>
-        <form>
-        <div className="space-y-6 py-10 px-6 bg-slate-200 rounded-3xl  p-6">
+  <Wrapper>
+      <div className=''>
+        <form className=''>
+        <div className="space-y-6 py-10 px-6 bg-slate-200 rounded-2xl ">
                     <div className='rounded-md '>
-                        {/* <label htmlFor="location" className="block text-sm font-medium text-gray-700">Location:</label> */}
-                        <select id="location" className="mt-1 block w-full p-3 text-lg border border-gray-300 rounded-xl bg-slate-100 shadow-sm">
+                        <select id="location" className="mt-1 block w-full  text-lg border border-gray-300 rounded-xl bg-slate-100 shadow-sm">
                             <option value="city1">Location</option>
                             <option value="city1">Benin</option>
                             <option value="city2">Kano</option>
@@ -19,7 +20,7 @@ const SectionB = () => {
                     </div>
                     <div> 
                         {/* <label htmlFor="bedroom" className="block text-sm font-medium text-gray-700">Bedroom:</label> */}
-                        <select id="bedroom" className="mt-1 block w-full p-3 text-lg border border-gray-300 rounded-xl bg-slate-100 shadow-sm">
+                        <select id="bedroom" className="mt-1 block w-full  text-lg border border-gray-300 rounded-xl bg-slate-100 shadow-sm">
                             <option value="1">Bedroom</option>
                             <option value="1">1 Bedroom</option>
                             <option value="2">2 Bedrooms</option>
@@ -29,7 +30,7 @@ const SectionB = () => {
                     </div>
                     <div>
                         {/* <label htmlFor="price" className="block text-sm font-medium text-gray-700">Price Range:</label> */}
-                        <select id="price" className="mt-1 block w-full p-3 text-lg border border-gray-300 rounded-xl bg-slate-100 shadow-sm ">
+                        <select id="price" className="mt-1 block w-full  text-lg border border-gray-300 rounded-xl bg-slate-100 shadow-sm ">
                             <option value="low">Price Range</option>
                             <option value="low">30M-50M</option>
                             <option value="medium">50M-100M</option>
@@ -40,7 +41,7 @@ const SectionB = () => {
                     </div>
                     <div>
                         {/* <label htmlFor="property-type" className="block text-sm font-medium text-gray-700">Property Type:</label> */}
-                        <select id="property-type" className="mt-1 block w-full p-3 text-lg border border-gray-300 rounded-xl bg-slate-100 shadow-sm ">
+                        <select id="property-type" className="mt-1 block w-full  text-lg border border-gray-300 rounded-xl bg-slate-100 shadow-sm ">
                             <option value="house">Property type</option>
                             <option value="house">Bungalow</option>
                             <option value="house">Duplex</option>
@@ -76,6 +77,7 @@ const SectionB = () => {
 </div>
     </div>
 
+  </Wrapper>
     
   )
 }

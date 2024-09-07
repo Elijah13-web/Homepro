@@ -1,5 +1,5 @@
 import React from 'react'
-import Wrapper from '../components/Wrapper'
+import Wrapper from './reasurable/Wrapper'
 import home from "../assets/icons/Vector (5).png"
 import pro from "../assets/icons/Homepro.png"
 import face from "../assets/icons/logos_facebook.png"

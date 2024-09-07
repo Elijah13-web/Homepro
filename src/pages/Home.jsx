@@ -13,7 +13,9 @@ import Footer from '../components/Footer'
 const Home = () => {
   return (
     <div>
-      <Hero/>
+     <div className="md:mt-32 mt-14">
+     <Hero/>
+     </div>
       <FeaturedProperty/>
       <Howitworks/>
       <Listings/>
