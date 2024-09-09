@@ -1,6 +1,6 @@
 import React from 'react'
-import Wrapper from './reasurable/Wrapper'
-import system from "../assets/images/Rectangle 2.png"
+import system from "../../assets/images/Rectangle 2.png"
+import Wrapper from "../reasurable/Wrapper"
 
 const OurStory = () => {
   return (

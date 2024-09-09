@@ -1,7 +1,7 @@
 import React from 'react'
-import Wrapper from './reasurable/Wrapper'
+import Wrapper from '../reasurable/Wrapper'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { TestimonialsDb } from './db'
+import { TestimonialsDb } from '../db'
 
 const Testimonials = () => {
   return (

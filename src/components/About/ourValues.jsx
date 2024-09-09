@@ -1,11 +1,11 @@
 import React from 'react'
-import Wrapper from './reasurable/Wrapper'
-import icon from "../assets/icons/Group.png"
+import icon from "../../assets/icons/Group.png"
+import Wrapper from "../reasurable/Wrapper"
 
 const OurValues = () => {
   return (
    <Wrapper>
- <div className='flex flex-col lg:flex-row p-8 lg:gap-48 gap-8 lg:pl-20'>
+ <div className='flex flex-col lg:flex-row lg:p-8 lg:gap-48 gap-8 lg:pl-20'>
         <div className='bg-black rounded-3xl lg:w-[510px] w-full'>
         <h1 className='lg:text-4xl text-3xl text-[#FFFFFF] mx-16 my-8 font-semibold'> Our Values</h1>
         <div className='py- mx-8 my-4 '>

@@ -1,6 +1,6 @@
 import React from 'react'
-import { SectionDb } from './db'
-import PropertyCard from './cards/PropertyCard'
+import { SectionDb } from '../db'
+import PropertyCard from '../cards/PropertyCard'
 
 const Section = () => {
   return (

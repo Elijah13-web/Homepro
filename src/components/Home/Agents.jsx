@@ -1,8 +1,7 @@
 import React from 'react'
-import Wrapper from './reasurable/Wrapper'
-import { agentsDb } from './db'
-import bg from "../assets/icons/Line 6.png"
-
+import { agentsDb } from '../db'
+import bg from "../../assets/icons/Line 6.png"
+import Wrapper from "../../components/reasurable/Wrapper"
 
 
 const Agents = () => {

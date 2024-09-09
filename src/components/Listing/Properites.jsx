@@ -1,7 +1,7 @@
 import React from 'react'
-import Wrapper from './reasurable/Wrapper'
-import Section from '../components/Section'
-import SectionB from '../components/sectionB'
+import Section from "../../components/Listing/Section"
+import SectionB from "../../components/Listing/sectionB"
+import Wrapper from "../reasurable/Wrapper"
 
 
 const Properites = () => {

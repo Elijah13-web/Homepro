@@ -1,6 +1,6 @@
 import React from 'react'
-import fam from "../assets/images/Vector (6).png"
-import Wrapper from './reasurable/Wrapper'
+import fam from "../../assets/images/Vector (6).png"
+import Wrapper from "../../components/reasurable/Wrapper"
 
 const Banners = () => {
   return (

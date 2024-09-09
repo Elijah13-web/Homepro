@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from '../components/Footer'
 import Jumbotron from '../components/Jumbotrun'
-import Properites from '../components/Properites'
+import Properites from "../components/Listing/Properites"
 import { Pagination } from '../components/Pagination'
 
 const Listings = () => {

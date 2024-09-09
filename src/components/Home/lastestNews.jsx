@@ -1,6 +1,6 @@
 import React from 'react'
-import Wrapper from './reasurable/Wrapper'
-import { LastestNewsDb } from './db'
+import Wrapper from '../reasurable/Wrapper'
+import { LastestNewsDb } from '../db'
 
 const LastestNews = () => {
   return (

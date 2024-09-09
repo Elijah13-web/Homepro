@@ -1,11 +1,11 @@
 import React from 'react'
-import WhoweAre from '../components/whoweAre'
+import HeroAbout from '../components/About/heroAbout'
+import WhoweAre from '../components/About/whoweAre'
+import OurStory from '../components/About/ourStory'
+import OurMission from '../components/About/ourMission'
+import OurValues from '../components/About/ourValues'
+import TheTeam from '../components/About/theTeam'
 import Footer from '../components/Footer'
-import HeroAbout from '../components/heroAbout'
-import OurStory from '../components/ourStory'
-import OurMission from '../components/ourMission'
-import OurValues from '../components/ourValues'
-import TheTeam from '../components/theTeam'
 
 const AboutUs = () => {
   return (

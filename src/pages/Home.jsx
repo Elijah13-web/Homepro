@@ -1,12 +1,12 @@
 import React from 'react'
-import Hero from '../components/Hero'
-import FeaturedProperty from '../components/featuredProperty'
-import Howitworks from '../components/Howitworks'
-import Listings from '../components/Listings'
-import Agents from '../components/Agents'
-import LastestNews from '../components/lastestNews'
-import Testimonials from '../components/Testimonials'
-import Banners from '../components/Banners'
+import Hero from '../components/Home/Hero'
+import FeaturedProperty from '../components/Home/featuredProperty'
+import Howitworks from '../components/Home/Howitworks'
+import Listings from "../components/Home/Listings"
+import Agents from '../components/Home/Agents'
+import LastestNews from '../components/Home/lastestNews'
+import Testimonials from '../components/Home/Testimonials'
+import Banners from "../components/Home/Banners"
 import Footer from '../components/Footer'
 
 

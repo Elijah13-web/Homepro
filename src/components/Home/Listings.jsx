@@ -1,7 +1,7 @@
 import React from 'react'
-import { listingsDb } from './db'
-import Wrapper from './reasurable/Wrapper'
-import PropertyCard from '../components/cards/PropertyCard'
+import { listingsDb } from "../../components/db"
+import Wrapper from "../../components/reasurable/Wrapper"
+import PropertyCard from "../../components/cards/PropertyCard"
 
 const Listings = () => {
   return (

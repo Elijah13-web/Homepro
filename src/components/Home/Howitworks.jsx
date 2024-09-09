@@ -1,6 +1,6 @@
 import React from 'react'
-import Wrapper from './reasurable/Wrapper'
-import { howitworksDb } from './db'
+import Wrapper from '../reasurable/Wrapper'
+import { howitworksDb } from '../db'
  
 const Howitworks = () => {
   return (
