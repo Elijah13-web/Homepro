@@ -48,7 +48,7 @@ const SectionB = () => {
                             <option value="apartment">Penthouse</option>
                         </select>
                     </div>
-                    <button className="w-full py-4 px-4 bg-[#9FA007] text-white font-medium rounded-full shadow-sm hover:bg-[#8f8f4d]">
+                    <button className="w-full p-3 bg-[#9FA007] text-white font-medium rounded-full shadow-sm hover:bg-[#8f8f4d]">
                         Search Property
                     </button>
                 </div>

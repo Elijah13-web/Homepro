@@ -11,7 +11,7 @@ const heroAbout = () => {
           <img src="{elipse}" alt="" />
           <h1 className="text-4xl md:text-5xl font-bold">About Homepro</h1>
         </div>
-        <div className="w-full flex justify-center items-center text-white hidden md:block ">
+        <div className="w-full lg:flex justify-center items-center text-white hidden md:block ">
           {/* <FaInfoCircle className="mr-2 text-lg md:text-xl" /> */}
           <div className="lg:w-[50%] md:w-[80%] mx-auto flex justify-between items-center">
             {/* <div className="flex items-center"> */}

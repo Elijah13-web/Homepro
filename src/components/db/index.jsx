@@ -1,7 +1,9 @@
+// featureDb
 import img1 from "../../assets/images/Frame 37.png"
 import img2 from "../../assets/images/Frame 37 (1).png"
 import img3 from "../../assets/images/Frame 37 (2).png"
 
+// listingsDb sectionDb
 import img161 from "../../assets/images/Frame 37 (4).png"
 import img12 from "../../assets/images/Frame 37 (3).png"
 import img13 from "../../assets/images/Frame 37 (9).png"
@@ -9,23 +11,27 @@ import img14 from "../../assets/images/Frame 37 (5).png"
 import img15 from "../../assets/images/Frame 37.png"
 import img16 from "../../assets/images/Frame 161.png"
 
+//howitworksDb
 import icon1 from "../../assets/icons/Frame 71.png"
 import icon2 from "../../assets/icons/Frame 71 (2).png"
 import icon3 from "../../assets/icons/Frame 71 (4).png"
 import icon4 from "../../assets/icons/Frame 71 (3).png"
 
+//AgentDb
 import img17 from "../../assets/images/Ellipse 1.png"
 import img18 from "../../assets/images/Ellipse 3.png"
 import img19 from "../../assets/images/Ellipse 2.png"
 import img20 from "../../assets/images/Ellipse 1 (1).png"
 
+// LastestnewsDb
 import img21 from "../../assets/images/Frame 87 (6).png"
 import img22 from "../../assets/images/Frame 87 (7).png"
 import img23 from "../../assets/images/Frame 87 (8).png"
+
+// blogDb
 import icon21 from "../../assets/icons/Vector (1).png"
 import icon22 from "../../assets/icons/Vector (2).png"
 import icon9 from "../../assets/icons/ArrowBendUpRight.png"
-
 import img24 from "../../assets/images/Frame 87 (3).png"
 import img25 from "../../assets/images/Frame 87 (4).png"
 import img26 from "../../assets/images/Frame 87 (5).png"
@@ -33,6 +39,7 @@ import img27 from "../../assets/images/Frame 87 (2).png"
 import img28 from "../../assets/images/Frame 87 (1).png"
 import img29 from "../../assets/images/Frame 87.png"
 
+//testimonalDb
 import img30 from "../../assets/images/Ellipse 4 (2).png"
 import img31 from "../../assets/images/Ellipse 4 (1).png"
 import img32 from "../../assets/images/Ellipse 4.png"
@@ -41,13 +48,16 @@ import img33 from "../../assets/images/Frame 37 (6).png"
 import img34 from "../../assets/images/Frame 37 (7).png"
 import img35 from "../../assets/images/Frame 37 (8).png"
 
+//sectioBDb
 import img155 from "../../assets/images/Frame 155.png"
 import img156 from "../../assets/images/Frame 156.png"
 import img157 from "../../assets/images/Frame 157.png"
 import img158 from "../../assets/images/Frame 158.png"
 
-import icon85 from "../../assets/icons/Group.png"
-
+import img230 from "../../assets/images/Frame 239 (1).png"
+import img231 from "../../assets/images/Frame 239 (2).png"
+import img239 from "../../assets/images/Frame 239.png"
+import img180 from "../../assets/images/Frame 180.png"
 
 
 
@@ -471,3 +481,4 @@ export const SectionBDb=[
     
         },
 ]
+
