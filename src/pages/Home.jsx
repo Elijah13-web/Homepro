@@ -6,6 +6,7 @@ import Listings from "../components/Home/Listings"
 import Agents from '../components/Home/Agents'
 import LastestNews from '../components/Home/lastestNews'
 import Testimonials from '../components/Home/Testimonials'
+import TestimonialWrapper from '../components/Home/testimonalWrapper'
 import Banners from "../components/Home/Banners"
 import Footer from '../components/Footer'
 
@@ -22,6 +23,7 @@ const Home = () => {
       <Agents/>
       <LastestNews/>
       <Testimonials/>
+      <TestimonialWrapper/>
       <Banners/>
       <Footer/>
     </div>

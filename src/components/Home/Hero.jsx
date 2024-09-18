@@ -39,11 +39,11 @@ const Hero = () => {
    <div className=' bg-[#F8F3DD]  '>
     <Wrapper>
      <div className=' flex flex-col'>
-      <div className='flex flex-col-reverse lg:flex-row flex-1  w-full'>
+      <div className='flex flex-col-reverse lg:flex-row   w-full'>
         {/* Text Content */}
-        <div className='flex  justify-center w-[100%] lg:mt-28'>
+        <div className='flex  justify-center mx-auto w-[100%] lg:mt-28'>
           <div className='text-center lg:text-start'>
-            <h1 className='font-semibold text-5xl pt-3'>
+            <h1 className='font-semibold text-5xl '>
               Find Your Dream <br /> Home Today!
             </h1>
             <p className='text-2xl  py-5 font-semibold hidden md:block'>

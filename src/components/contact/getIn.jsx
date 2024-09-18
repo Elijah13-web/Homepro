@@ -58,7 +58,7 @@ const ContactPage = () => {
               placeholder="Write your message here"
               required
               rows="6"
-              className="w-full h-auto px-3 py-3 border border-gray-300 rounded-lg shadow-sm sm:text-sm mb-4"
+              className="w-full max-h-56 px-3 py-3 border border-gray-300 rounded-lg shadow-sm sm:text-sm mb-4"
             />
 
             <div className="flex justify-center">

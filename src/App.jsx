@@ -9,7 +9,6 @@ import Contact from './pages/Contact';
 import Login from './pages/auth/Login';
 import Register from './pages/auth/Resgister';
 import HelmetWrapper from './components/reasurable/HelmetAsync';
-import Masion from './pages/Details.jsx/Masion';
 
 
 const App = () => {
@@ -25,7 +24,6 @@ const App = () => {
       <Route path='/contact'element={<Contact/>}/>
       <Route path='/login' element={<Login/>} />
       <Route path="/register" element={<Register/>} />
-      <Route path="/Masion" element={<Masion/>}/>
       </Routes>
     </BrowserRouter>
    </HelmetWrapper>

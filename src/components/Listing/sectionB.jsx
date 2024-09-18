@@ -5,10 +5,10 @@ import Wrapper from "../../components/reasurable/Wrapper"
 
 const SectionB = () => {
   return (
-  <Wrapper>
+  <Wrapper> 
       <div className=''>
-        <form className=' h-[350px] py-5'>
-        <div className="space-y-6 py-10 px-6 bg-slate-200 rounded-2xl ">
+        <form className=' h-[370px] py-5'>
+        <div className="space-y-8 py-12 px-4 bg-slate-200 rounded-2xl ">
                     <div className='rounded-md '>
                         <select id="location" className="mt-1 block w-full  text-lg border border-gray-300 rounded-xl bg-slate-100 shadow-sm">
                             <option value="city1">Location</option>
@@ -55,16 +55,16 @@ const SectionB = () => {
         </form>
 
 
-<div className='py-12'>
+<div className='py-20'>
     <h1 className='text-3xl font-bold p-5'>Featured Properites</h1>
     <div>
     {SectionBDb && SectionBDb.map((item, index)=>{
         return (
-          <div className='flex w-[400px] py-5 hover:items gap-4'>
+          <div className='flex w-[400px] py-5 hover:border gap-2'>
             <div className='w-[100px]'>
       <img src={item.image} alt='img'className=' '/>
       </div>
-      <div className='text-xl font-semibold '>
+      <div className='text-xl font-semibold'>
       <h1 className=''>{item.title}</h1>
       <div className='flex text-custom-green'> <img src={nairaIcon} alt='nariaIcon' className=''/>{item.price.toLocaleString("en-Us")}</div>
       </div>

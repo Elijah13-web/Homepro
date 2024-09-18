@@ -8,7 +8,7 @@ const blogCard = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-20">
         {blogCardDb && blogCardDb.map((item,index)=>{
     return (
-        <div className=' justify-between  bg-slate-50 rounded-xl h-[540px]' key={index}>
+        <div className=' justify-between  bg-slate-50 rounded-xl h-[540px] hover:border' key={index}>
             <div className=''>
                 <img src={item.image} alt="icon1" className='w-full' />
             </div>

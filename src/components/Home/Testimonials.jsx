@@ -1,33 +1,30 @@
-import React from 'react'
-import Wrapper from '../reasurable/Wrapper'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { TestimonialsDb } from '../db'
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/autoplay'; // Import Swiper's autoplay CSS
+import { EffectFade, Navigation, Pagination, Autoplay } from 'swiper/modules';
+import TestimonialCard from "../../components/cards/Testimonialscard";
 
-const Testimonials = () => {
+export default function Testimonial({data}) {
   return (
-    <Wrapper>
-      <Swiper>
-      <div className='py-5'>
-      <h1 className='text-3xl md:text-5xl font-bold py-5 text-center lg:text-start'>Customer Testimonials</h1>
-    </div>
-    <div className="flex lg:justify-between flex-wrap lg:flex-nowrap gap-16 justify-center py-5 ">
-        {TestimonialsDb && TestimonialsDb.map((item, index)=>{
-            return (
-                <div className='w-[500px] h-[205px] bg-[#9DA00826] rounded-3xl relative' key={index}>
-                    <div className=' absolute -top-10 left-40'>
-                    <img src={item.image} alt="icon1" className=' w-24 h-24'/>  
-                    </div>
-                    <div className='py-20 text-center '>
-                        <p className='text-sm font-semibold px-4'>{item.description}</p>
-                        <h1 className='text-sm font-bold py-5'>{item.title}</h1>
-                    </div>
-                </div>
-            )
-        })}
-        </div>
-      </Swiper>
-    </Wrapper>
-  )
+    <Swiper
+      spaceBetween={30}
+      effect={'fade'}
+      autoplay={{
+        delay: 5000,
+        disableOnInteraction: false,
+      }}
+      modules={[EffectFade, Navigation, Pagination, Autoplay]}
+      className=" max-w-[375px]  bg-inherit"
+    >
+      {data && data.map((slide) => (
+        <SwiperSlide key={slide._id}>
+          <TestimonialCard {...slide} key={slide._id}/>
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  );
 }
-
-export default Testimonials

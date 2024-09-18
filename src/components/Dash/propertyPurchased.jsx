@@ -1,5 +1,5 @@
 import React from 'react';
-import Wrapper from "./reasurable/Wrapper"
+import Wrapper from "../reasurable/Wrapper"
 import ngn from "../../assets/icons/CurrencyNgn (1).png"
 import Image230 from "../../assets/images/Frame 239 (1).png"
 import Image231 from "../../assets/images/Frame 239 (2).png"

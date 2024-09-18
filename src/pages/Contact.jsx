@@ -2,6 +2,9 @@ import React from 'react'
 import Footer from '../components/Footer';
 import Jumbotron from '../components/Jumbotrun'
 import GetIn from "../components/contact/getIn"
+import Mansion from '../components/contact/Mansion';
+import PropertyDetails from '../components/contact/propertyDetails';
+import PropertyOverview from '../components/contact/propertyOverview';
 // import Dashboard from '../components/dashBoard';
 
 const Contact = () => {
@@ -12,6 +15,9 @@ const Contact = () => {
       <GetIn/>
       </div>
       {/* <Dashboard/> */}
+      <Mansion/>
+      <PropertyDetails/>
+      <PropertyOverview/>
       <Footer/>
     </div>
   )

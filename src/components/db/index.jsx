@@ -40,10 +40,11 @@ import img28 from "../../assets/images/Frame 87 (1).png"
 import img29 from "../../assets/images/Frame 87.png"
 
 //testimonalDb
-import img30 from "../../assets/images/Ellipse 4 (2).png"
-import img31 from "../../assets/images/Ellipse 4 (1).png"
-import img32 from "../../assets/images/Ellipse 4.png"
+import testy3 from "../../assets/images/Ellipse 4 (2).png"
+import testy1 from "../../assets/images/Ellipse 4 (1).png"
+import testy2 from "../../assets/images/Ellipse 4.png"
 
+//sectionDb
 import img33 from "../../assets/images/Frame 37 (6).png"
 import img34 from "../../assets/images/Frame 37 (7).png"
 import img35 from "../../assets/images/Frame 37 (8).png"
@@ -355,27 +356,76 @@ export const blogCardDb=[
     },
 ]
 
-export const TestimonialsDb=[
+export const TestimonialDb1 = [
     {
-        _id: 1,
-        title: "Jonathan Micheal.",
-        description:"“Great experience from start to finish. Thank you for helping me find my dream home!” ",
-        image: img30,
+      _id: 1,
+      author: "Ajibola Mary",
+      content:
+        "“Professional and efficient service. I found the perfect property!”",
+      image: testy1,
     },
     {
-        _id: 2,
-        title: "Ajibola Mary.",
-        description:"“Professional and efficient service. I found the perfect property!”",
-        image: img31,
+      _id: 2,
+      author: "James Bowel",
+      content:"“Finding our new home was a breeze with this website. Highly recommend!”",
+      image: testy2,
     },
     {
-        _id: 3,
-        title: "James Bowel",
-        description:"“Finding our new home was a breeze with this website. Highly recommend!”",
-        image: img32,
+      _id: 3,
+      author: "Jonathan Michael",
+      content:
+        "“Great experience from start to finish. Thank you for helping me find my dream home!”",
+      image: testy3,
     },
-
-]
+  ];
+  export const TestimonialDb2 = [
+    
+    {
+      _id: 2,
+      author: "James Bowel",
+      content:
+        "“Finding our new home was a breeze with this website. Highly recommend!”",
+      image: testy2,
+    },
+    {
+      _id: 3,
+      author: "Jonathan Michael",
+      content:
+        "“Great experience from start to finish. Thank you for helping me find my dream home!”",
+      image: testy3,
+    },
+    {
+      _id: 1,
+      author: "Ajibola Mary",
+      content:
+        "“Professional and efficient service. I found the perfect property!”",
+      image: testy1,
+    },
+  ];
+  export const TestimonialDb3 = [
+    
+    {
+      _id: 3,
+      author: "Jonathan Micheal",
+      content:
+        "“Great experience from start to finish. Thank you for helping me find my dream home!”",
+      image: testy3,
+    },
+    {
+      _id: 1,
+      author: "Ajibola Mary",
+      content:
+        "“Professional and efficient service. I found the perfect property!”",
+      image: testy1,
+    },
+    {
+      _id: 2,
+      author: "James Bowel",
+      content:
+        "“Finding our new home was a breeze with this website. Highly recommend!”",
+      image: testy2,
+    },
+  ];
 
 export const SectionDb=[
     {
