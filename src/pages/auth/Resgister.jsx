@@ -1,9 +1,47 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import imglogo2 from "../../assets/icons/flat-color-icons_google.png"
 import Wrapper from '../../components/reasurable/Wrapper'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
+
 
 const Register = () => {
+// state
+const [formData, setFormDate] = useState({
+  firstname: "ELIJAH",
+  lastname: "fire",
+  username: "hotman",
+  email: "hott@email.com",
+  password: "",
+});
+
+// handleInputchange
+const handleInputChange = (e) => {
+  setFormDate({...formData, [e.target.name]: e.target.value });
+};
+
+const apiUrl ="https://homepro-backend-y4t5.onrender.com/api/auth/register"
+
+//   Function to submit form data to backend 
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  try {
+    const res = await axios.post(apiUrl, {
+      firstName: formData.firstname,
+      lastName: formData.lastname,
+      userName: formData.username,
+      email: formData.email,
+      password: formData.password,
+    });
+    console.log(res);
+    alert("Registration Successful!");
+  } catch (err) {
+    console.error(err);
+  }
+};
+
+// console.log(formData.firstname);
+
   return (
   <Wrapper>
      <div className="w-full lg:w-[628px] mx-auto ">
@@ -13,14 +51,40 @@ const Register = () => {
         <p className='text-center'>Already have an account? <Link to="/login" className="cursor-pointer text-custom-green  hover px-1  ">Log In </Link></p>
     </div>
 
-    <form className=" w-full border box-content rounded-3xl shadow-lg lg:p-5">
+    <form onSubmit={handleSubmit} className=" w-full border box-content rounded-3xl shadow-lg lg:p-5">
           <div className="mb-4">
-            <label htmlFor="name" className="block text-gray-700 mb-2">Name*</label>
+            <label className="block text-gray-700 mb-2">First Name*</label>
             <input
-              id="name"
+              name="firstname"
               type="text"
+              value={formData.firstname}
+              onChange={handleInputChange}
               required
-              placeholder="Elijah"
+              placeholder="first name"
+              className="w-full px-3 py-4 border border-gray-300 rounded-xl bg-slate-100"
+            />
+          </div>
+          <div className="mb-4">
+            <label  className="block text-gray-700 mb-2">Last Name*</label>
+            <input
+              name="lastname"
+              type="text"
+              value={formData.lastname}
+              onChange={handleInputChange}
+              required
+              placeholder="last name"
+              className="w-full px-3 py-4 border border-gray-300 rounded-xl bg-slate-100"
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700 mb-2">UserName*</label>
+            <input
+              name="username"
+              type="text"
+              value={formData.username}
+              onChange={handleInputChange}
+              required
+              placeholder="username"
               className="w-full px-3 py-4 border border-gray-300 rounded-xl bg-slate-100"
             />
           </div>
@@ -28,7 +92,9 @@ const Register = () => {
           <div className="mb-4">
             <label htmlFor="email" className="block text-gray-700 mb-2">Email address*</label>
             <input
-              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleInputChange}
               type="email"
               required
               placeholder="parfman@gmail.com"
@@ -39,7 +105,9 @@ const Register = () => {
           <div className="mb-4">
             <label htmlFor="password" className="block text-gray-700 mb-2">Password*</label>
             <input
-              id="password"
+              name="password"
+              value={formData.password}
+              onChange={handleInputChange}
               type="password"
               required
               placeholder="Enter your password"
