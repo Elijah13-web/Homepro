@@ -4,19 +4,19 @@ import React, { useState } from 'react';
 import { AiOutlineSearch } from 'react-icons/ai'; // Using react-icons for search icon
 // import { IoIosArrowDown } from 'react-icons/io'; // For dropdown arrow icon
 // import { FaBell} from 'react-icons/fa'; // Icons for notifications and messages
-import settings from "../assets/icons/solar_settings-outline.png"
-import logout from "../assets/icons/solar_logout-2-outline.png"
-import message from "../assets/icons/mynaui_message.png"
-import eye from "../assets/icons/carbon_view.png"
-import heart from "../assets/icons/Heart.png"
-import bell from "../assets/icons/fluent_alert-24-regular.png"
-import dash from "../assets/icons/mage_dashboard-2.png"
-import home from "../assets/icons/Vector (5).png"
-import pro from "../assets/icons/Homepro.png"
+import settings from "../../assets/icons/solar_settings-outline.png"
+import logout from "../../assets/icons/solar_logout-2-outline.png"
+import message from "../../assets/icons/mynaui_message.png"
+import eye from "../../assets/icons/carbon_view.png"
+import heart from "../../assets/icons/Heart.png"
+import bell from "../../assets/icons/fluent_alert-24-regular.png"
+import dash from "../../assets/icons/mage_dashboard-2.png"
+import home from "../../assets/icons/Vector (5).png"
+import pro from "../../assets/icons/Homepro.png"
 import Welcome from './Welcome';
 import Recent from './Recent';
-import userlog from "../assets/icons/Ellipse 6.png"
-import dropdown from "../assets/icons/Vector (8).png"
+import userlog from "../../assets/icons/Ellipse 6.png"
+import dropdown from "../../assets/icons/Vector (8).png"
 import PropertyPurchased from './propertyPurchased';
 
 

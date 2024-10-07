@@ -9,24 +9,38 @@ import Contact from './pages/Contact';
 import Login from './pages/auth/Login';
 import Register from './pages/auth/Resgister';
 import HelmetWrapper from './components/reasurable/HelmetAsync';
+import { ScrollToTop } from './components/reasurable/ScrollToTop';
+import { ModalProvider } from "./components/context/ModalContext"
+import ModalWrapper from "./components/context/ModalContextWrapper"
+import Dashboard from './components/Dash/dashBoard';
+import {ToastContainer } from "react-toastify";
+import BlogDetail from './components/cards/BlogDetail';
+
 
 
 const App = () => {
   return (
-   <HelmetWrapper>
+   <ModalProvider>
+    <HelmetWrapper>
      <BrowserRouter>
+     <ModalWrapper/>
       <Menu/>
+      <ScrollToTop/>
+      <ToastContainer/>
       <Routes>
       <Route path='/'element={<Home/>}/>
       <Route path='/aboutUs'element={<AboutUs/>}/>
       <Route path='/listings' element={<Listings/>}/>
       <Route path='/blog' element={<Blog/>}/>
+      <Route path="/blog/:id" element={<BlogDetail/>} />
       <Route path='/contact'element={<Contact/>}/>
       <Route path='/login' element={<Login/>} />
       <Route path="/register" element={<Register/>} />
+      <Route path="/dashboard" element={<Dashboard/>} />
       </Routes>
     </BrowserRouter>
    </HelmetWrapper>
+   </ModalProvider>
   )
 }
 

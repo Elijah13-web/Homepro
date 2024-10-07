@@ -1,8 +1,8 @@
 
 
 import React from 'react';
-import red from "../assets/icons/Rectangle 5.png"
-import green from "../assets/icons/Rectangle 5 (1).png"
+import red from "../../assets/icons/Rectangle 5.png"
+import green from "../../assets/icons/Rectangle 5 (1).png"
 
 const Recent = () => {
   return (

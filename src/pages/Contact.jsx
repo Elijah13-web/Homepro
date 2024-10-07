@@ -5,7 +5,7 @@ import GetIn from "../components/contact/getIn"
 import Mansion from '../components/contact/Mansion';
 import PropertyDetails from '../components/contact/propertyDetails';
 import PropertyOverview from '../components/contact/propertyOverview';
-// import Dashboard from '../components/dashBoard';
+// import Dashboard from "../components/Dash/dashBoard"
 
 const Contact = () => {
   return (

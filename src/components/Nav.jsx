@@ -4,9 +4,12 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import logo from "../assets/icons/Frame 4.png"
 import { Link, NavLink } from "react-router-dom";
 import Wrapper from "./reasurable/Wrapper";
+import { useModal } from "./context/ModalContext";
+import AuthForm from "../pages/auth/AuthForm";
 
 const Menu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { openModal } = useModal();
 
   const onToggleMenu = () => {
     setMenuOpen((prev) => !prev);
@@ -14,6 +17,10 @@ const Menu = () => {
 
   const onCloseMenu = () => {
     setMenuOpen(false);
+  };
+
+  const handleOpenModal = () => {
+    openModal(<AuthForm />); 
   };
 
   return (
@@ -30,7 +37,7 @@ const Menu = () => {
               menuOpen ? "block top-[100%]  bg-[#F8F3DD]" : "hidden top-[12%]"
             } md:flex md:items-center md:w-auto min-h-fit flex-col md:flex-row`}
           >
-            <ul className="flex md:flex-row flex-col md:items-center  gap-8 md:gap-5 lg:gap-8 font-bold text-neutral-grey-300  md:pl-0">
+            <ul className="flex md:flex-row flex-col md:items-center gap-8 md:gap-5 lg:gap-8 font-bold text-neutral-grey-300 md:pl-0 px-5">
               <li>
                 <NavLink
                   to="/"
@@ -92,14 +99,14 @@ const Menu = () => {
                 </NavLink>
               </li>
               <div className="md:hidden flex gap-5 mb-8">
-                <Link to="/register" className="md:block  px-4 py-2 rounded-full border border-custom-green hover:text-custom-green font-medium text-sm transition-all ease-in-out duration-300">
+                <Link onClick={handleOpenModal} className="md:block  px-6 py-2 rounded-full border border-custom-green hover:text-custom-green font-medium text-sm transition-all ease-in-out duration-300">
                   Get Started
                 </Link>
               </div>
             </ul>
           </div>
           <div className="flex items-center">
-            <Link to="/register" className="hidden md:block  px-4 py-2 rounded-full border border-custom-green hover:text-custom-green font-medium text-sm transition-all ease-in-out duration-300">
+            <Link onClick={handleOpenModal} className="hidden md:block  px-4 py-2 rounded-full border border-custom-green hover:text-custom-green font-medium text-sm transition-all ease-in-out duration-300">
               Get Started
             </Link>
             <div

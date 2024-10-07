@@ -5,10 +5,19 @@ import eyeClosed from "../../assets/icons/Component 47.png"
 import Wrapper from '../../components/reasurable/Wrapper';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+import { useModal } from '../../components/context/ModalContext';
 
-const Login = () => {
+
+
+const Login = ({ toggleModal }) => {
   const [rememberMe, setRememberMe] = useState(false); // State for checkbox
   const [showPassword, setShowPassword] = useState(false); // State for password visibility
+  const navigate  = useNavigate();
+  const { isModalOpen, closeModal } = useModal();
+
 
   const handleCheckboxChange = () => {
     setRememberMe(!rememberMe); // Toggle remember me state
@@ -39,23 +48,29 @@ const Login = () => {
         password: formData.password,
       });
       console.log(res);
-      alert("Login Successful!");
+      toast.success("Login Successful!");
+      closeModal()
+      setTimeout(()=>{
+        navigate ("/dashboard")
+      }, 5000)
     } catch (err) {
       console.error(err);
+      if(err.response)
+        toast.error(err.response.data.message)
     }
   };
 
   return (
     <Wrapper>
-      <div className="w-full lg:w-[628px] mx-auto">
+      <div className="w-full  mx-auto">
         <div className="justify-center items-center">
           <div className="py-3">
-            <h1 className="mt-32 text-center text-4xl font-bold">WELCOME BACK!</h1>
+            <h1 className="mt-10  text-center text-4xl font-bold">WELCOME BACK!</h1>
             <p className="text-center">
               Don't have an account?{" "}
-              <Link to="/register" className="cursor-pointer text-custom-green px-1">
+              <b onClick={toggleModal} className="cursor-pointer text-custom-green px-1">
                 Sign Up
-              </Link>
+              </b>
             </p>
           </div>
           <form onSubmit={handleSubmit} className="w-full border box-content rounded-3xl shadow-lg lg:p-5">
