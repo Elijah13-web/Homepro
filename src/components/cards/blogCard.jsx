@@ -21,7 +21,7 @@ const BlogCard = () => {
                   <div className='text-1xl py-2 gap-6 flex'>{item.date}</div>
                 </div>
                 <p className='text-1xl font-bold'>{item.heading}</p>
-                <p className='text-1xl font-semibold '>{item.description}</p>
+                <p className='text-1xl font-semibold '>{item.description.slice(0, 30 )}...</p>
                 <div className='flex py-3 gap-1 my-3'>
                   <img src={item.icon9} alt='icon9' className='w-12 h-12'/>
                   <p className='text-custom-green text-xl h-6 py-1'>Read more</p>

@@ -15,7 +15,7 @@ import ModalWrapper from "./components/context/ModalContextWrapper"
 import Dashboard from './components/Dash/dashBoard';
 import {ToastContainer } from "react-toastify";
 import BlogDetail from './components/cards/BlogDetail';
-
+import PropertyDetail from './components/cards/PropertyDetail';
 
 
 const App = () => {
@@ -31,6 +31,7 @@ const App = () => {
       <Route path='/'element={<Home/>}/>
       <Route path='/aboutUs'element={<AboutUs/>}/>
       <Route path='/listings' element={<Listings/>}/>
+      <Route path="/property/:id" element={<PropertyDetail />} />
       <Route path='/blog' element={<Blog/>}/>
       <Route path="/blog/:id" element={<BlogDetail/>} />
       <Route path='/contact'element={<Contact/>}/>

@@ -9,14 +9,17 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { useModal } from '../../components/context/ModalContext';
+import { useAuth } from '../../components/context/AuthContext';
 
 
 
 const Login = ({ toggleModal }) => {
   const [rememberMe, setRememberMe] = useState(false); // State for checkbox
   const [showPassword, setShowPassword] = useState(false); // State for password visibility
+  const [loading, setLoading] = useState(false); 
   const navigate  = useNavigate();
   const { isModalOpen, closeModal } = useModal();
+  const { login } = useAuth()
 
 
   const handleCheckboxChange = () => {
@@ -28,7 +31,7 @@ const Login = ({ toggleModal }) => {
   };
 
   const [formData, setFormDate] = useState({
-    username: "hotman",
+    username: "",
     password: "",
   });
   
@@ -37,26 +40,25 @@ const Login = ({ toggleModal }) => {
     setFormDate({...formData, [e.target.name]: e.target.value });
   };
   
-  const apiUrl ="https://homepro-backend-y4t5.onrender.com/api/auth/login"
+  // const apiUrl ="https://homepro-backend-y4t5.onrender.com/api/auth/login"
   
   //   Function to submit form data to backend 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post(apiUrl, {
-        userName: formData.username,
-        password: formData.password,
-      });
+      setLoading(true)
+      const res = await login(formData.username, formData.password);
       console.log(res);
       toast.success("Login Successful!");
+      setLoading(false)
       closeModal()
-      setTimeout(()=>{
-        navigate ("/dashboard")
-      }, 5000)
+      navigate ("/dashboard")
     } catch (err) {
       console.error(err);
       if(err.response)
         toast.error(err.response.data.message)
+    }finally{
+      setLoading(false)
     }
   };
 
@@ -134,7 +136,7 @@ const Login = ({ toggleModal }) => {
               type="submit"
               className="w-full py-4 px-4 bg-[#9FA007] text-white rounded-full hover:bg-[rgb(128,128,33)]"
             >
-              Sign In
+              {loading ? "Loading..." : "Sign In"}
             </button>
 
             {/* Or Section */}

@@ -1,11 +1,9 @@
 
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { AiOutlineSearch } from 'react-icons/ai'; // Using react-icons for search icon
-// import { IoIosArrowDown } from 'react-icons/io'; // For dropdown arrow icon
-// import { FaBell} from 'react-icons/fa'; // Icons for notifications and messages
 import settings from "../../assets/icons/solar_settings-outline.png"
-import logout from "../../assets/icons/solar_logout-2-outline.png"
+import logoutIcon from "../../assets/icons/solar_logout-2-outline.png"
 import message from "../../assets/icons/mynaui_message.png"
 import eye from "../../assets/icons/carbon_view.png"
 import heart from "../../assets/icons/Heart.png"
@@ -18,18 +16,36 @@ import Recent from './Recent';
 import userlog from "../../assets/icons/Ellipse 6.png"
 import dropdown from "../../assets/icons/Vector (8).png"
 import PropertyPurchased from './propertyPurchased';
+import { useAuth } from '../context/AuthContext';
+import { useNavigate } from 'react-router-dom';
+import { capitalize } from '../reasurable/ScrollToTop';
+
 
 
 export const Dashboard = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false); // State for dropdown toggle
+  const {auth, logout } = useAuth()
+  const [fullname, setFullname] = useState("")
+  const navigate = useNavigate()
 
   // Function to toggle dropdown visibility
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
   };
 
+  const handleLogout = ()=>{
+    logout()
+    navigate("/")
+  }
+
+  useEffect(() => {
+    if (auth?.user?.username) {
+      setFullname(capitalize(auth.user.username)); 
+    }
+  }, [auth]);
+
   return (
-    <div className="flex flex-col lg:flex-row min-h-screen bg-gray-200">
+    <div className="flex flex-col lg:flex-row min-h-screen bg-gray-200 mt-32 ">
       {/* Left Sidebar */}
       <div className="w-full lg:w-1/4 bg-white px-4 py-6 shadow-lg hidden lg:block">
         {/* Aligning Home and Pro Icons */}
@@ -77,8 +93,8 @@ export const Dashboard = () => {
             </li>
           </span>
           <span className="flex justify-center lg:justify-start py-3">
-            <img src={logout} alt="logout-icon" />
-            <li className="cursor-pointer lg:ml-3 hover:text-red-600 text-red-500">
+            <img src={logoutIcon} alt="logout-icon" />
+            <li onClick={handleLogout} className="cursor-pointer lg:ml-3 hover:text-red-600 text-red-500">
               <strong>Logout</strong>
             </li>
           </span>
@@ -124,7 +140,7 @@ export const Dashboard = () => {
                 <ul className="absolute right-0 mt-2 w-48 bg-white border rounded shadow-md text-gray-700">
                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Account Settings</li>
                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Recently Viewed</li>
-                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer text-red-500">Logout</li>
+                  <li onClick={handleLogout} className="px-4 py-2 hover:bg-gray-100 cursor-pointer text-red-500">Logout</li>
                 </ul>
               )}
             </div>
@@ -134,7 +150,7 @@ export const Dashboard = () => {
         {/* Layout for Welcome and Recent components */}
         <div className="flex flex-col space-y-6 lg:flex-row lg:space-y-0 lg:space-x-6 lg:px-6 px-4">
           <div className="flex-1">
-            <Welcome />
+            <Welcome name={fullname} />
           </div>
           <div className="flex-1">
             <Recent />

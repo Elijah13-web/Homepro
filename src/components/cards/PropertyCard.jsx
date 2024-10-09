@@ -4,10 +4,12 @@ import heart from "../../assets/icons/Heart.png"
 import bedIcon from '../../assets/icons/Bed.png';
 import bathIcon from '../../assets/icons/Bathtub.png'
 import tdesign from '../../assets/icons/tdesign_measurement-2.png'
+import { Link } from 'react-router-dom';
 
 const PropertyCard = ({ _id, title, image, price, bed, bath, size }) => {
     return (
-        <>
+        <Link to={`/property/${_id}`}>
+
             <div className="bg-slate-50 rounded-xl max-w-[400px] h-[396px] hover:border" key={_id}>
                 <div className='rounded-lg p-6 max-w-[400px]'>
                     <img src={image} alt='37(1)' className='w-[325px] h-[245px] r-[15px]' />
@@ -35,7 +37,7 @@ const PropertyCard = ({ _id, title, image, price, bed, bath, size }) => {
                     </div>
                 </div>
             </div>
-        </>
+        </Link>
     )
 }
 

@@ -259,7 +259,7 @@ export const blogCardDb=[
         _id: 1,
         title: "Samuel O.",
         heading:"Top Tips for First-Time Homebuyers:",
-        description:" Learn the essentials for a smooth homebuying experience",
+        description:" Learn the essentials for a smooth home buying experience.",
         date:"6/08/2024",
         image: img21,
         icon:icon21,
@@ -292,7 +292,7 @@ export const blogCardDb=[
         _id: 4,
         title: "Daniel Y.",
         heading:"Understanding the Real Estate Market:",
-        description:"Get the latest insights on investment opportunites.",
+        description:"Get the latest insights on investment opportunites. We have the lastest insight on buildings and property.",
         date:"3/08/2024",
         image: img24,
         icon:icon21,
@@ -303,7 +303,7 @@ export const blogCardDb=[
         _id: 5,
         title: "Adedayo A.",
         heading:"How to Maximze Your Property's Value Before Selling:",
-        description:"Discover how to boost your property' market value.",
+        description:"Discover how to boost your property' market value. And now we the place to keep all the properties and even the ones for rents.",
         date:"2/08/2024",
         image: img25,
         icon:icon21,
@@ -314,7 +314,7 @@ export const blogCardDb=[
         _id: 6,
         title: "Ebenezer A.",
         heading:"Understanding the Mortgage process:",
-        description:"A step-by-step guide to getting a mortgage.",
+        description:"A step-by-step guide to getting a mortgage. And now we the place to keep all the properties and even the ones for rents.",
         date:"1/08/2024",
         image: img26,
         icon:icon21,
@@ -429,8 +429,10 @@ export const TestimonialDb1 = [
 
 export const SectionDb=[
     {
-        _id: 1,
-        title: "Mansion im Asokoro",
+        _id: '1',
+        title: "Mansion in Asokoro",
+        location: "No 23, Ajayi Crowther Street",
+        description:" Property OverView Discover unparalleled luxury in this stunning Mansion located in the heart of Asokoro Abuja. This exquisite home offers 6 spacious bedrooms, 7 modern bathrooms, and a sprawling 7,500 sqft of living space. Designed with elegance and comfort in mind, this property features high-end finishes, a gourmet kitchen, a private cinema, and a lush garden with a sparkling pool. The open floor plan seamlessly connects the living areas, creating an inviting atmosphere perfect for both relaxation and entertaining.",
         price: 455000000,
         bed: 6,
         bath: 7,
@@ -439,7 +441,7 @@ export const SectionDb=[
 
     },
     {
-        _id: 2,
+        _id: '2',
         title: "Hotel in POrt-Harcourt City",
         price: 650000000,
         bed: 50,
@@ -449,8 +451,9 @@ export const SectionDb=[
 
     },
     {
-        _id: 3,
+        _id: '3',
         title: "Mansion in Jabi",
+        description: "the house is the suswn ",
         price: 450000000,
         bed: 6,
         bath: 7,
@@ -459,7 +462,7 @@ export const SectionDb=[
 
     },
     {
-        _id: 4,
+        _id: '4',
         title: "Penthouse in Kaduna City",
         price: 300000000,
         bed: 5,
@@ -469,7 +472,7 @@ export const SectionDb=[
 
     },
     {
-        _id: 5,
+        _id: '5',
         title: "Bungalow in Lagos",
         price: 355000000,
         bed: 7,
@@ -479,7 +482,7 @@ export const SectionDb=[
 
     },
     {
-        _id: 6,
+        _id: '6',
         title: "Hotel in Benin City",
         price: 600000000,
         bed: 40,
@@ -531,4 +534,5 @@ export const SectionBDb=[
     
         },
 ]
+
 

@@ -5,12 +5,13 @@ import Wrapper from "../../components/reasurable/Wrapper"
 
 const SectionB = () => {
   return (
-  <Wrapper> 
+  <Wrapper>  
       <div className=''>
         <form className=' h-[370px] py-5'>
         <div className="space-y-8 py-12 px-4 bg-slate-200 rounded-2xl ">
                     <div className='rounded-md '>
                         <select id="location" className="mt-1 block w-full  text-lg border border-gray-300 rounded-xl bg-slate-100 shadow-sm">
+                            
                             <option value="city1">Location</option>
                             <option value="city1">Benin</option>
                             <option value="city2">Kano</option>
@@ -60,7 +61,7 @@ const SectionB = () => {
     <div>
     {SectionBDb && SectionBDb.map((item, index)=>{
         return (
-          <div className='flex w-[400px] py-5 hover:border gap-2'>
+          <div className='flex w-[400px] py-5 hover:border gap-2' key={item._id}>
             <div className='w-[100px]'>
       <img src={item.image} alt='img'className=' '/>
       </div>
@@ -81,7 +82,6 @@ const SectionB = () => {
     
   )
 }
-
 export default SectionB
 
 

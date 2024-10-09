@@ -17,7 +17,7 @@ const PropertyPurchased = () => {
 
         <div className="lg:py-6 relative lg:w-[1000px] w-full ">
           {/* Table Header */}
-        <div className="bg-slate-100 w-full px-11 py-6 rounded-t-lg flex justify-between items-center border-gray-300">
+        <div className="bg-slate-100 w-full px-11 py-6 rounded-t-lg lg:flex justify-between items-center border-gray-300 hidden">
           <div className="w-1/3 text-left  relative top-3">
             <h3 className="text-lg font-semibold">Title Listing</h3>
           </div>
