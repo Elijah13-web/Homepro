@@ -59,7 +59,7 @@ const Register = ({ toggleModal }) => {
   return (
     <Wrapper>
       <ToastContainer/>
-      <div className="w-full lg:w-[628px] mx-auto h-[700px] ">
+      <div className="w-full lg:w-[625px] mx-auto h-[700px] ">
         <div className="py-3">
           <h1 className="mt-30 text-center text-4xl font-bold">REGISTER!</h1>
           <p className="text-center">
@@ -69,7 +69,7 @@ const Register = ({ toggleModal }) => {
             </b>
           </p>
         </div>
-        <form onSubmit={handleSubmit} className=" w-full border box-content rounded-3xl shadow-lg lg:p-5">
+        <form onSubmit={handleSubmit} className=" w-full border rounded-3xl shadow-lg lg:p-5">
           <div className="mb-4">
             <label className="block text-gray-700 mb-2">First Name*</label>
             <input

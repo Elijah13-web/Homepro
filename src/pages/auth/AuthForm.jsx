@@ -6,7 +6,7 @@ import Register from "./Resgister";
 import Login from "./Login";
 
 const AuthForm = ({ loading }) => {
-  const [isLogin, setIsLogin] = useState(true);
+  const [isLogin, setIsLogin] = useState(false);
 
   // Function to toggle form
   const handleToggleForm = () => {

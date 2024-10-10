@@ -31,7 +31,7 @@ const Login = ({ toggleModal }) => {
   };
 
   const [formData, setFormDate] = useState({
-    username: "",
+    userName: "",
     password: "",
   });
   
@@ -46,7 +46,7 @@ const Login = ({ toggleModal }) => {
     e.preventDefault();
     try {
       setLoading(true)
-      const res = await login(formData.username, formData.password);
+      const res = await login(formData.userName, formData.password);
       console.log(res);
       toast.success("Login Successful!");
       setLoading(false)
@@ -74,17 +74,17 @@ const Login = ({ toggleModal }) => {
               </b>
             </p>
           </div>
-          <form onSubmit={handleSubmit} className="w-full border box-content rounded-3xl shadow-lg lg:p-5">
+          <form onSubmit={handleSubmit} className="w-full border rounded-3xl shadow-lg lg:p-5">
             {/* Username Field */}
             <div className="mb-4">
             <label className="block text-gray-700 mb-2">UserName*</label>
             <input  
-              name="username"
+              name="userName"
               type="text"
-              value={formData.username}
+              value={formData.userName}
               onChange={handleInputChange}
               required
-              placeholder="username"
+              placeholder="userName"
               className="w-full px-3 py-4 border border-gray-300 rounded-xl bg-slate-100"
             />
           </div>
