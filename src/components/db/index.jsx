@@ -59,6 +59,7 @@ import img230 from "../../assets/images/Frame 239 (1).png"
 import img231 from "../../assets/images/Frame 239 (2).png"
 import img239 from "../../assets/images/Frame 239.png"
 import img180 from "../../assets/images/Frame 180.png"
+import { GrOverview } from "react-icons/gr"
 
 
 
@@ -432,7 +433,8 @@ export const SectionDb=[
         _id: '1',
         title: "Mansion in Asokoro",
         location: "No 23, Ajayi Crowther Street",
-        description:" Property OverView Discover unparalleled luxury in this stunning Mansion located in the heart of Asokoro Abuja. This exquisite home offers 6 spacious bedrooms, 7 modern bathrooms, and a sprawling 7,500 sqft of living space. Designed with elegance and comfort in mind, this property features high-end finishes, a gourmet kitchen, a private cinema, and a lush garden with a sparkling pool. The open floor plan seamlessly connects the living areas, creating an inviting atmosphere perfect for both relaxation and entertaining.",
+        overview: "Property OverView",
+        description:"Discover unparalleled luxury in this stunning Mansion located in the heart of Asokoro Abuja. This exquisite home offers 6 spacious bedrooms, 7 modern bathrooms, and a sprawling 7,500 sqft of living space. Designed with elegance and comfort in mind, this property features high-end finishes, a gourmet kitchen, a private cinema, and a lush garden with a sparkling pool. The open floor plan seamlessly connects the living areas, creating an inviting atmosphere perfect for both relaxation and entertaining.",
         price: 455000000,
         bed: 6,
         bath: 7,
@@ -453,7 +455,7 @@ export const SectionDb=[
     {
         _id: '3',
         title: "Mansion in Jabi",
-        description: "the house is the suswn ",
+        description: "",
         price: 450000000,
         bed: 6,
         bath: 7,

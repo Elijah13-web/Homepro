@@ -40,7 +40,6 @@ const Login = ({ toggleModal }) => {
     setFormDate({...formData, [e.target.name]: e.target.value });
   };
   
-  // const apiUrl ="https://homepro-backend-y4t5.onrender.com/api/auth/login"
   
   //   Function to submit form data to backend 
   const handleSubmit = async (e) => {
@@ -79,7 +78,7 @@ const Login = ({ toggleModal }) => {
             {/* Username Field */}
             <div className="mb-4">
             <label className="block text-gray-700 mb-2">UserName*</label>
-            <input
+            <input  
               name="username"
               type="text"
               value={formData.username}

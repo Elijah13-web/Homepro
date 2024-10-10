@@ -4,6 +4,7 @@ import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
 import { CiSquarePlus } from "react-icons/ci";
 import { CiSquareMinus } from "react-icons/ci";
 import Wrapper from "../reasurable/Wrapper"
+import { Link } from 'react-router-dom';
 
 // VerticalDivider component
 const VerticalDivider = ({ height = '100px', width = '1px', color = 'white' }) => {
@@ -41,12 +42,12 @@ const Hero = () => {
      <div className=' flex flex-col'>
       <div className='flex flex-col-reverse lg:flex-row   w-full'>
         {/* Text Content */}
-        <div className='flex  justify-center mx-auto w-[100%] lg:mt-28 mt-10'>
+        <div className='flex  justify-center mx-auto w-[100%] lg:mt-20 mt-10'>
           <div className='text-center lg:text-start'>
             <h1 className='font-semibold lg:text-7xl text-5xl'>
               Find Your Dream <br /> Home Today!
             </h1>
-            <p className='text-2xl  py-5 font-semibold hidden md:block'>
+            <p className='text-2xl  pb-8 font-semibold hidden md:block'>
               Your journey to a new home starts here. <br/>
               Let's find the perfect place for you.
             </p>
@@ -54,9 +55,9 @@ const Hero = () => {
               Your journey to a new home starts here.
               Let's find the perfect place for you.
             </p>
-            <button className='bg-[#a0a007c4] text-white font-semibold py-5 px-6 rounded-full hover:bg-[#a0a007]'>
+            <Link to ="/listings" className='bg-[#a0a007c4] text-white font-semibold py-5 px-6  rounded-full hover:bg-[#a0a007]'>
               Browse Properties
-            </button>
+            </Link>
           </div>
         </div>
         

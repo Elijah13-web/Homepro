@@ -34,8 +34,8 @@ const PropertyDetail = () => {
       <div className="md:w-1/2">
         <h1 className="text-3xl font-bold mb-2">{property.title}</h1>
         <p className="text-lg mb-2">{property.location}</p>
+        <h1 className="text-3xl font-bold">{property.overview}</h1>
         <p className="text-lg mb-4">{property.description}</p>
-        <p className="text-lg mb-4">{property.overview}</p> 
         <p className="text-lg mb-4">{property.features}</p>
         {/* Add additional property details here */}
       </div>

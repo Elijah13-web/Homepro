@@ -111,19 +111,19 @@ export const Dashboard = () => {
           <div className="flex items-center space-x-4 relative">
 
             {/* Search Input */}
-            <div className="flex items-center bg-white border rounded-full  px-4 py-1 sm:px-6 lg:px-24 shadow-none w-full sm:w-auto relative right-28">
-              <AiOutlineSearch size={30} className="text-gray-600 mr-2 relative right-20" />
+            <div className="flex items-center bg-white border rounded-full shadow-none w-full relative right-32">
+              <AiOutlineSearch size={30} className="text-gray-600 mr-2 relative px-1" />
               <input
                 type="text"
-                placeholder="Search"
-                className="w-full outline-none relative right-20"
+                placeholder="Search..."
+                className="w-full outline-none relative right-30"
               />
             </div>
             {/* Icons: Notification and Message */}
             <div className="flex relative">
               <img src={bell} alt="" size={20}/>
             {/* <FaBell className="text-gray-600" size={20} /> */}
-            <p className="relative  text-white text-sm right-3 items-center justify-center  bottom-2 bg-green-400 rounded-full h-5 w-4">2</p>
+            <p className="relative text-white text-sm right-3 text-center items-center justify-center bottom-5 bg-green-400 rounded-full w-12 ">2</p>
             </div>
             <img src={userlog} alt="userImage" size={10}/>
             {/* <FaEnvelope className="text-gray-600" size={20} /> */}
