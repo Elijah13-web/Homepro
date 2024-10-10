@@ -119,7 +119,7 @@ const Register = ({ toggleModal }) => {
               className="w-full px-3 py-4 border border-gray-300 rounded-xl bg-slate-100"
             />
           </div>
-          <div className="mb-4">
+          {/* <div className="mb-4">
             <label htmlFor="number" className="block text-gray-700 mb-2">Phone number*</label>
             <input
               name="number"
@@ -130,7 +130,7 @@ const Register = ({ toggleModal }) => {
               placeholder="+23485647882"
               className="w-full px-3 py-4 border border-gray-300 rounded-xl bg-slate-100"
             />
-          </div>
+          </div> */}
 
           <div className="mb-3 relative">
             <label htmlFor="password" className="block text-gray-700 mb-2">Password*</label>
