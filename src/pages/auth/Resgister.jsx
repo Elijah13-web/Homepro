@@ -59,9 +59,9 @@ const Register = ({ toggleModal }) => {
   return (
     <Wrapper>
       <ToastContainer/>
-      <div className="w-full lg:w-[625px] mx-auto h-[700px] ">
+      <div className="w-full lg:w-[630px] mx-auto h-[500px] ">
         <div className="py-3">
-          <h1 className="mt-30 text-center text-4xl font-bold">REGISTER!</h1>
+          <h1 className="mt-10 text-center text-4xl font-bold">REGISTER!</h1>
           <p className="text-center">
             Already have an account?{" "}
             <b className="cursor-pointer text-custom-green px-1" onClick={toggleModal}>
