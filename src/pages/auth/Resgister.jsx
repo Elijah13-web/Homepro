@@ -3,11 +3,11 @@
 import React, { useState } from 'react';
 import imglogo2 from "../../assets/icons/flat-color-icons_google.png";
 import Wrapper from '../../components/reasurable/Wrapper';
-import eyeOpen from "../../assets/icons/Component 47.png";
+import eyeOpen from "../../assets/icons/carbon_view.png";
 import eyeClosed from "../../assets/icons/Component 47.png";
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
-import { toast, ToastContainer } from "react-toastify";
+import { toast, } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { useModal } from '../../components/context/ModalContext';
 import { useAuth } from '../../components/context/AuthContext';
@@ -58,7 +58,7 @@ const Register = ({ toggleModal }) => {
 
   return (
     <Wrapper>
-      <ToastContainer/>
+      {/* <ToastContainer/> */}
       <div className="w-full lg:w-[630px] mx-auto h-[500px] ">
         <div className="py-3">
           <h1 className="mt-10 text-center text-4xl font-bold">REGISTER!</h1>

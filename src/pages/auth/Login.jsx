@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import imglogo2 from "../../assets/icons/flat-color-icons_google.png";
-import eyeOpen from "../../assets/icons/Component 47.png"
+import eyeOpen from "../../assets/icons/carbon_view.png"
 import eyeClosed from "../../assets/icons/Component 47.png"
 import Wrapper from '../../components/reasurable/Wrapper';
 import { Link } from 'react-router-dom';

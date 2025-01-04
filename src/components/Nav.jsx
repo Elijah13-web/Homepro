@@ -22,6 +22,14 @@ const Menu = () => {
   const handleOpenModal = () => {
     openModal(<AuthForm />); 
   };
+  const ScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Add smooth scrolling
+    });
+    onCloseMenu(); // Close the menu after scrolling
+  };
+
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50  bg-[#F8F3DD]">
@@ -46,6 +54,7 @@ const Menu = () => {
                       isActive ? "text-black border-b-primary border-b-2" : "text-black"
                     }`
                   }
+                  onClick={ScrollToTop}
                 >
                   Home
                 </NavLink>
@@ -58,6 +67,7 @@ const Menu = () => {
                       isActive ? "text-black border-b-primary border-b-2" : "text-black"
                     }`
                   }
+                  onClick={ScrollToTop}
                 >
                   About Us
                 </NavLink>
@@ -70,6 +80,7 @@ const Menu = () => {
                       isActive ? "text-black border-b-primary border-b-2" : "text-black"
                     }`
                   }
+                  onClick={ScrollToTop}
                 >
                   Listings
                 </NavLink>
@@ -82,6 +93,7 @@ const Menu = () => {
                       isActive ? "text-black border-b-primary border-b-2" : "text-black"
                     }`
                   }
+                  onClick={ScrollToTop}
                 >
                   Blog
                 </NavLink>
@@ -94,6 +106,7 @@ const Menu = () => {
                       isActive ? "text-black border-custom-green border-b-2" : "text-black"
                     }`
                   }
+                  onClick={ScrollToTop}
                 >
                   Contact
                 </NavLink>
@@ -105,6 +118,7 @@ const Menu = () => {
               </div>
             </ul>
           </div>
+          
           <div className="flex items-center">
             <Link onClick={handleOpenModal} className="hidden md:block  px-4 py-2 rounded-full border border-custom-green hover:text-custom-green font-medium text-sm transition-all ease-in-out duration-300">
               Get Started
