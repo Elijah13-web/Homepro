@@ -7,7 +7,7 @@ const Listings = () => {
   return (
         <Wrapper className="">
       <h1 className=' text-3xl md:text-5xl font-bold py-10 text-center  lg:text-start'>Our Listings</h1>
-      <div className='flex md:justify-around lg:justify-between flex-wrap md:gap-8 lg:gap-2'>
+      <div className='md:justify-around lg:justify-between grid lg:grid-cols-3 md:grid-cols-2 md:gap-8 lg:gap-10'>
       { listingsDb && listingsDb.length > 0 && listingsDb.map((property)=>{
         return(
           <div className="" key={property._id}>

@@ -20,9 +20,9 @@ const Footer = () => {
             </div>
             <h1 className='text-[#FFFFFF] text-1xl py-3'>Best place to find properties <br /> that suits your person.</h1>
             <div className='flex gap-4 py-3 items-center justify-center'>
-              <img src={face} alt='face' className='bg-[#FFFFFF] py-1 px-1 rounded-full hover:border' />
-              <img src={ig} alt='ig' className='bg-[#FFFFFF] py-1 px-1 rounded-full hover:border' />
-              <img src={x} alt='x' className='bg-[#FFFFFF] py-1 px-1 rounded-full hover:border' />
+              <img src={face} alt='face' className='bg-[#FFFFFF] py-1 px-1 rounded-full hover:cursor-pointer'/>
+              <img src={ig} alt='ig' className='bg-[#FFFFFF] py-1 px-1 rounded-full hover:cursor-pointer'/>
+              <img src={x} alt='x' className='bg-[#FFFFFF] py-1 px-1 rounded-full hover:cursor-pointer'/>
             </div>
           </div>
           <div className='text-[#FFFFFF] text-1xl mx-10'>
@@ -35,17 +35,17 @@ const Footer = () => {
           </div>
           <div className='text-[#FFFFFF] text-1xl font-bold'>
             <h1 className=''>Subscribe to Our Newsletter for latest updates</h1>
-            <form action="/submit-email" method="post" className="max-w-[90%] mx-auto py-6">
-              <div className="flex w-full">
+            <form action="/submit-email" method="post" className="max-w-[100%] mx-auto py-5">
+              <div className="flex w-full h-12">
                 <input
                   type="email"
                   placeholder="Your Email"
                   required
-                  className=" flex-1 py-3 px-3 border border-gray-300 text-black rounded-l-xl shadow-sm sm:text-sm"
+                  className=" flex-1 py--gray-300 text-black rounded-l-xl shadow-sm sm:text-sm px-4"
                 />
                 <button
                   type="submit"
-                  className="bg-[#9FA007] text-white  px-4 border border-transparent rounded-r-xl shadow-sm text-sm font-medium hover:bg-[#8a8b05] focus:outline-none"
+                  className="bg-[#9FA007] text-white-transparent rounded-r-xl shadow-sm text-xl font-medium hover:bg-[#8a8b05] focus:outline-none"
                 >
                   Subscribe
                 </button>
@@ -54,7 +54,7 @@ const Footer = () => {
           </div>
         </div>
       </Wrapper>
-      <div className="w-full bg-inherit border-t border-t-slate-400 text-sm">
+      <div className="w-full bg-i-t-slate-400 text-sm">
         <div className="bg-inherit flex flex-col justify-center items-center">
           <p className="text-center text-sm bg-inherit text-slate-300">
             Copyright&copy;2024&nbsp;&nbsp;|&nbsp;&nbsp;All rights reserved.
