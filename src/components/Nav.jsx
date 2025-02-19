@@ -32,7 +32,7 @@ const Menu = () => {
 
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50  bg-[#F8F3DD]">
+    <header className="fixed top-0 left-0 right-0 z-50  bg-[#F8F3DD] px-4 md:px-0  mx-auto container">
       <Wrapper className="bg-hero ">
         <nav className="flex  justify-between items-center md:h-[8rem]">
           <Link to="/" className="flex items-baseline text-primary">

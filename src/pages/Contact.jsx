@@ -9,8 +9,8 @@ import PropertyOverview from '../components/contact/propertyOverview';
 
 const Contact = () => {
   return (
-    <div>
-      <div className='md:pt-32 pt-10'>
+    <div className='mx-auto container'>
+      <div className='md:pt-32 pt-10 '>
       <Jumbotron title="Have any Questions?" description="We are available, contact us"/>
       <GetIn/>
       </div>

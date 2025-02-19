@@ -63,7 +63,7 @@ const Login = ({ toggleModal }) => {
 
   return (
     <Wrapper>
-      <div className="w-full  mx-auto">
+      <div className="mx-auto container lg:w-[630px]">
         <div className="justify-center items-center">
           <div className="py-3">
             <h1 className="mt-10  text-center text-4xl font-bold">WELCOME BACK!</h1>

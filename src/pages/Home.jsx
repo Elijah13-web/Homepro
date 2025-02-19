@@ -13,8 +13,8 @@ import Footer from '../components/Footer'
 
 const Home = () => {
   return (
-    <div>
-     <div className="md:mt-32 mt-14">
+    <div className=' mx-auto container'>
+     <div className="md:mt-32 mt-14 ">
      <Hero/>
      </div>
       <FeaturedProperty/>

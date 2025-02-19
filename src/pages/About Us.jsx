@@ -9,7 +9,7 @@ import Footer from '../components/Footer'
 
 const AboutUs = () => {
   return (
-    <div>
+    <div className=' mx-auto container'>
       <div className='md:pt-32 pt-10'>
       <HeroAbout/>
       </div>

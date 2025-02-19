@@ -6,8 +6,8 @@ import { Pagination } from '../components/Pagination'
 
 const Listings = () => {
   return (
-    <div>
-     <div className='md:pt-32 pt-10'>
+    <div className='mx-auto container'>
+     <div className='md:pt-32 pt-10 '>
      <Jumbotron title="Find the Best Properties" description="Discover a wide range of exclusive properties tailored to your unique preferences."/>
      </div>
       <Properites/>

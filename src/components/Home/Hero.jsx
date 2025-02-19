@@ -37,7 +37,8 @@ const Hero = () => {
   };
 
   return (
-   <div className=' bg-[#F8F3DD]'>
+   <div>
+    <div className=' bg-[#F8F3DD] '>
     <Wrapper>
      <div className=' flex flex-col'>
       <div className='flex flex-col-reverse lg:flex-row   w-full'>
@@ -250,6 +251,7 @@ const Hero = () => {
       </div>
     </div>
    </Wrapper>
+   </div>
    </div>
   );
 };

@@ -11,7 +11,7 @@ const Section = () => {
   };
 
   return (
-    <div className="grid sm:grid-cols-2 gap-8 min-h-[100vh]">
+    <div className="grid sm:grid-cols-2 gap-8 ">
       {SectionDb && SectionDb.length > 0 && SectionDb.map((property) => (
         <div key={property._id} onClick={() => handleCardClick(property._id)} className="cursor-pointer">
           <PropertyCard {...property} />

@@ -55,14 +55,10 @@ const Footer = () => {
         </div>
       </Wrapper>
       <div className="w-full bg-i-t-slate-400 text-sm">
-        <div className="bg-inherit flex flex-col justify-center items-center">
+        <div className="bg-inherit flex flex-col justify-center items-center pb-4">
           <p className="text-center text-sm bg-inherit text-slate-300">
             Copyright&copy;2024&nbsp;&nbsp;|&nbsp;&nbsp;All rights reserved.
           </p>
-          <small className="text-center text-xs bg-inherit text-slate-400 mt-3">
-            Designed by Maryam 
-            | Coded by @Elijah
-          </small>
         </div>
       </div>
 

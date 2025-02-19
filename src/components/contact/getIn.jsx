@@ -38,8 +38,8 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen">
-      <main className="flex-1 flex items-center justify-center p-6 transform md:w-[90%] mx-auto">
+    <div className="flex flex-col">
+      <main className="flex-1 flex items-center justify-center md:p-8 transform md:w-[90%] mx-auto">
         <div className="w-full p-6 bg-gray-100 rounded-lg shadow-md lg:max-h-[695px]">
           <h1 className="text-2xl font-bold mb-4 text-center">Get in Touch with Us</h1>
           <p className="mb-8 text-center">
